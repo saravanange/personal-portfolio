@@ -1,0 +1,26 @@
+{
+  "name": "personal-portfolio",
+  "version": "1.0.0",
+  "description": "Personal portfolio site",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/saravanange/personal-portfolio.git"
+  },
+  "keywords": [
+    "personal-portfolio"
+  ],
+  "author": "Test",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/saravanange/personal-portfolio/issues"
+  },
+  "homepage": "https://github.com/saravanange/personal-portfolio#readme",
+  "dependencies": {
+    "ejs": "^3.1.9",
+    "express": "^4.18.2"
+  }
+}

@@ -1,0 +1,29 @@
+<% var bodyContent=` <section class="projects">
+    <h1>Projects</h1>
+
+    <div class="project">
+        <h2>Project Title 1</h2>
+        <img src="/images/project1.jpg" alt="Project 1">
+        <p>
+            Description of Project 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Nulla auctor bibendum nulla, eget bibendum libero luctus eu.
+        </p>
+        <a href="#">View Project</a>
+    </div>
+
+    <div class="project">
+        <h2>Project Title 2</h2>
+        <img src="/images/project2.jpg" alt="Project 2">
+        <p>
+            Description of Project 2. Nulla facilisi. Proin a lacus eget dui congue suscipit.
+            Vestibulum eget erat et urna sodales tristique vel eget purus.
+        </p>
+        <a href="#">View Project</a>
+    </div>
+
+    <!-- Add more project sections as needed -->
+
+    </section>
+    ` %>
+
+    <%- include('./layouts/layout', { body: bodyContent }) %>

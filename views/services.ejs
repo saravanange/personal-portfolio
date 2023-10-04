@@ -1,0 +1,36 @@
+
+
+<% var bodyContent = `
+        <section class="services">
+            <h1>Services</h1>
+            
+            <div class="service">
+                <h2>Web Development</h2>
+                <p>
+                    I offer web development services, including front-end and back-end development.
+                    I specialize in creating responsive and user-friendly websites using the latest technologies.
+                </p>
+            </div>
+            
+            <div class="service">
+                <h2>UI/UX Design</h2>
+                <p>
+                    I provide UI/UX design services to ensure your website or application has a visually appealing
+                    and intuitive user interface. I focus on user-centered design principles.
+                </p>
+            </div>
+            
+            <div class="service">
+                <h2>Website Maintenance</h2>
+                <p>
+                    Keeping your website up-to-date is crucial. I offer website maintenance services to ensure
+                    your site is always running smoothly with the latest content and features.
+                </p>
+            </div>
+            
+            <!-- Add more service sections as needed -->
+            
+        </section>
+        ` %>
+ 
+    <%- include('./layouts/layout', { body: bodyContent }) %>
