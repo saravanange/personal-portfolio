@@ -1,0 +1,7 @@
+0. Project directory
+1. npm install
+2.npm install express ejs
+3.npm init
+4.node app.js
+
+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
