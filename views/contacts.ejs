@@ -1,0 +1,13 @@
+
+<%- include('./layouts/layout', { body: '' }) %>
+<h1>Contact List</h1>
+<ul>
+    <% contacts.forEach(contact => { %>
+        <li>
+            <%= contact.name %> - <%= contact.number %> - <%= contact.email %>
+            <a href="/contacts/update/<%= contact._id %>">Update</a>
+            <a href="/contacts/delete/<%= contact._id %>">Delete</a>
+        </li>
+    <% }) %>
+</ul>
+

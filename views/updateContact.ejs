@@ -1,0 +1,39 @@
+<%- include('./layouts/layout', { body: '' }) %>
+<!DOCTYPE html>
+<html>
+    <!-- Add this link in the head section of your HTML file -->
+<link rel="stylesheet" type="text/css" href="/path/to/styles.css">
+
+<head>
+    <title>Update Contact</title>
+</head>
+<body>
+    <h1>Update Contact</h1>
+    
+    <% if (contact) { %>
+    <form method="post" action="/contacts/update/<%= contact._id %>">
+        <div>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" value="<%= contact.name %>">
+        </div>
+        <div>
+            <label for="number">Number:</label>
+            <input type="text" id="number" name="number" value="<%= contact.number %>">
+        </div>
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" value="<%= contact.email %>">
+        </div>
+        <div>
+            <button type="submit">Update Contact</button>
+            <a href="/contacts">Cancel</a> <!-- Add Cancel Button -->
+        </div>
+    </form>
+    <% } else { %>
+    <p>Contact not found.</p>
+    <% } %>
+</body>
+</html>
+
+
+
